@@ -1,0 +1,27 @@
+.Container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    top: 10px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.a{
+    background-color: red;
+}
+@media (min-width:200px) and (max-width:400vw){
+    .Container{
+        display: grid;
+        grid-template-columns: repeat(3,2fr);
+    }
+}
+@media (min-width:400px) and (max-width:768vw){
+    .Container{
+        display: grid;
+        grid-template-columns: repeat(4,3fr);
+    }
+}
+@media (min-width:769px) and (max-width:1024vw){
+    .Container{
+        grid-template-columns: repeat(5,1fr);
+    }
+}
